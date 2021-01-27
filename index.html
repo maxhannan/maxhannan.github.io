@@ -1,46 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SubstanceSeven</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bd-coming-soon.css">
-</head>
-
-<body class="min-vh-100 d-flex flex-column">
-
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-dark bg-transparenet">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.svg" alt="logo">
-                </a>
-                <span class="navbar-text ml-auto d-none d-sm-inline-block">239-218-1349 </span>
-                <span class="navbar-text d-none d-sm-inline-block">maxhannan@substanceseven.com</span>
-            </nav>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/main.css">
+    </head>
+    <body>
+        <div class="resultContainer" >
+            <div id = 'result'>
+                <p id = "GFG_DOWN">ROCK PAPER SCISSORS </p> 
+            </div>
+            <div id = "outcomeContainer">
+                <p id = 'outcome'></p>
+            </div>
+            <div id = 'scoreContainer'>
+                <h1 class = 'score'>Player Score:<span id = 'playerScore' > 0</span> </h1>
+                <h1 class = 'score'>Comp Score:<span id = 'compScore'> 0</span></h1> 
+            </div>
         </div>
-    </header>
-    <main class="my-auto">
-        <div class="container">
-            <h1 class="page-title">We're coming soon</h1>
-            <p class="page-description">Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiu sit amet consectetur
-            </p>
-            <p>Stay connected</p>
-            <nav class="footer-social-links">
-                <a href="#!" class="social-link"><i class="mdi mdi-facebook-box"></i></a>
-                <a href="https://twitter.com/MCDIDEROT" class="social-link"><i class="mdi mdi-twitter"></i></a>
-                <a href="#!" class="social-link"><i class="mdi mdi-google"></i></a>
-                <a href="#!" class="social-link"><i class="mdi mdi-slack"></i></a>
-                <a href="#!" class="social-link"><i class="mdi mdi-skype"></i></a>
-            </nav>
-        </div>
-    </main>
-</body>
+        
+    </div>
+        <div class = 'buttonContainer'>
+            <input  id = 'imgbtnr' type="image" tabindex="1" src="assets/frame.png" value="rock" onClick="GFG_click(this.value)"/>
+            <input id = 'imgbtnp' type="image" src="assets/frame.png" value ="paper" onClick="GFG_click(this.value)"/>
+            <input id = 'imgbtns' type="image" src="assets/frame.png" value="scissors" onClick="GFG_click(this.value)"/>
+       </div>
+       <div id = 'buttonHolder'>
+        <button class = 'btn' onClick="gameOver()">reset</button>
+    </div>
 
+ 
+        <script src="assets/script.js" async defer></script>
+    </body>
 </html>
